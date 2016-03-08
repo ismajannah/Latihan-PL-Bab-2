@@ -1,7 +1,7 @@
 
 package tugas_prak;
 
-public class Lapangan {
+public class Lapangan { 
     
    final int panjang, lebar;
     
