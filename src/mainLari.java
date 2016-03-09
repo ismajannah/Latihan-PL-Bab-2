@@ -56,7 +56,9 @@ public class mainLari {
         for(int i =0;i<m.length;i++){
             m[i].Tampil(lap);
         }
-        m[0].Pemenang(m,lap);
+        System.out.println("");
+        
+        m[0].Pemenang(m,lap);//pemenang
  
     
 }

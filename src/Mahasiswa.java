@@ -41,7 +41,7 @@ public class Mahasiswa {
                k++;
            }
         }
-        System.out.println((b[k].nama)+" "+b[k].hitung(a));
+        System.out.println((b[k].nama));
     }
 
     
