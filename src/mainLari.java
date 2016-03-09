@@ -15,15 +15,16 @@ public class mainLari {
         int panjang = in.nextInt();
         int lebar = in.nextInt();
         Lapangan lap = new Lapangan(panjang, lebar);
-
+       
         for (int i = 0; i < m.length; i++) {
 
             
             
-            String nama_mahasiswa[] = new String[m.length];
-            String nim[] = new String[m.length];
-            int jumlahPutaran[] = new int[m.length];
-            int jumlah_waktu[] = new int[m.length];
+            String nama_mahasiswa;
+            String nim;
+            int jumlahPutaran;
+            int jumlah_waktu;
+          
 
             String a = in.next();
             String b = in.next();
@@ -38,26 +39,27 @@ public class mainLari {
             int c1 = Integer.parseInt(pecah[4]);
             int d1 = Integer.parseInt(pecah[6]);
             
-            nim[i] = pecah[0];
+            nim= pecah[0];
 
-            nama_mahasiswa[i] = pecah[2];
+            nama_mahasiswa = pecah[2];
 
-            jumlahPutaran[i] = c1;
+            jumlahPutaran = c1;
 
-            jumlah_waktu[i] = d1;
+            jumlah_waktu = d1;
             
-
+            
             m[i] = new Mahasiswa(nim, nama_mahasiswa, jumlahPutaran, jumlah_waktu);
-
+            
+            
+          
         }
+        for(int i =0;i<m.length;i++){
+            m[i].Tampil(lap);
+        }
+        m[0].Pemenang(m,lap);
  
-        System.out.println("OUTPUT");
-
-        for (int i = 0; i < m.length; i++) {
-       
-            m[i].Tampil(lap, i);
-        }
-
+    
+}
+         
     }
 
-}

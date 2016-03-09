@@ -1,0 +1,4 @@
+class = mahasiswa, lapangan
+object = m[n]...
+attribut = panjang, lebar, keliling, nim, nama, jumlahPutaran, jumlah_waktu
+method = hitungJarak, Tampil, hitung, Pemenang,
